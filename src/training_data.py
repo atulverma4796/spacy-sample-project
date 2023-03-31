@@ -542,72 +542,138 @@
 #       'POLICY NUMBER: 5050-0419-16 COMMERCIAL GENERAL LIABILITY CG 20 28 07 04 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. ADDITIONAL INSURED -LESSOR OF LEASED EQUIPMENT This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Name Of Additional Insured Person(s) Or Organization(s) As required by written contract executed prior to the date of an occurrence. If required by your written contract with the Additional Insured, this insurance shall be on a primary/non-contributory basis. The inclusion of one or more Additional Insured under the terms of this endorsement does not increase our limits of liability. All other terms and conditions remain unchanged. Information required to complete this Schedule, if not shown above , will be shown in the Declarations .',
 #       {"entities": [(300, 735, "SCHEDULED_TEXT:ADDITIONAL_INSURED")]}
 #   ),
-# #   (
-# #       'POLICY NUMBER: COMMERCIAL GENERAL LIABILITY CG 20 37 0413 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. ADDITIONAL INSURED -OWNERS, LESSEES OR CONTRACTORS -COMPLETED OPERATIONS This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART PRODUCTS/COMPLETED OPERATIONS LIABILITY COVERAGE PART SCHEDULE Name Of Additional Insured Person(s) Or Organization(s) Location And Description Of Completed Ooerations As required by written contract executed prior to As required by written contract executed prior to the date of an occurrence. the date of an occurrence. Information required to complete this Sched ule, if not shown above, will be shown in the Declarations.',
-# #       {"entities": [( 366, 597, "SCHEDULED_TEXT:ADDITIONAL_INSURED_AND_PROJECT_LOCATION")]}
-# #   ),
-# #   (
-# #       'POLICY NUMBER: 5050-0419-16 COMMERCIAL GENERAL LIABILITY THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. EXCLUSION -DESIGNATED PROJECT POLICY This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART PRODUCTS/COMPLETED OPERATIONS LIABILITY COVERAGE PART SCHEDULE Description of your work: "ALL WORK AND PROJECTS INSURED SEPERATELY UNDER A DESIGNATED PROJECT POLICY. HOWEVER THIS EXCLUSION DOES NOT APPLY TO CONSOLIDATED (WRAP-UP) INSURANCE PROGRAMS." (If no entry appears above, information required to complete this endorsement will be shown in the Declarations as applicable to this endorsement.)',
-# #       {"entities": [(329, 516, "SCHEDULED_TEXT:PROJECT POLICY EXCLUSION")]}
-# #   ),
-# #   (
-# #       'POLICY NUMBER: 5050-0419-16 COMMERCIAL GENERAL LIABILITY CG 215301 96 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. EXCLUSION -DESIGNATED PROJECT POLICY This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Description of Designated Ongoing Operation(s): "ALL WORK AND PROJECTS INSURED SEPERATELY UNDER A DESIGNATED PROJECT POLICY. HOWEVER THIS EXCLUSION DOES NOT APPLY TO CONSOLIDATED (WRAP-UP) INSURANCE PROGRAMS." Specified Location (If Applicable): "ALL WORK AND PROJECTS INSURED SEPERATELY UNDER A DESIGNATED PROJECT POLICY. HOWEVER THIS EXCLSUION DOES NOT APPLY TO CONSOLIDATED (WRAP-UP) INSURANCE PROGRAMS." (If no entry appears above, information required to complete this endorsement will be shown in the Declarations as applicable to this endorsement.)',
-# #       {"entities": [(288, 497, "SCHEDULED_TEXT:DESCRIPTION OF DESIGNATED ONGOING OPERATION(S)"), (498, 695, "SCHEDULED_TEXT: PROJECT_LOCATION")]}
-# #   ),
-# #   (
-# #       'POLICY NUMBER: 5050-0419-16 COMMERCIAL GENERAL LIABILITY CG 215401 96 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. EXCLUSION -DESIGNATED OPERATIONS COVERED BY A CONSOLIDATED (WRAP-UP) INSURANCE PROGRAM This endorsement modifies insurance provided under the following : COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Description and Location of Operation(s): ALL WRAP-UPS (If no entry appears above, information required to complete this endorsement will be shown in the Declarations as applicable to this endorsement.)',
-# #       {"entities": [(339, 393, "SCHEDULED_TEXT:DESCRIPTION AND LOCATION OF OPERATION(S)")]}
-# #   ),
-# #   (
-# #       'POLICY NUMBER: 5050-0419-16 COMMERCIAL GENERAL LIABILITY CG 24 04 05 09 WAIV ER OF TRANSFER OF RIGHTS OF RECOVERY AGAINST OTHERS TO US This endorsement modifies insurance provided under the following : COMMERCIAL GENERAL LIABILITY COVERAGE PART PRODUCTS/COMPLETED OPERATIONS LIABILITY COVERAGE PART SCHEDULE Name Of Person Or Organization: AS PER WRITTEN CONTRACT Inform ation required to comp lete this Schedule , if not shown above , will be shown in the Declarations .',
-# #       {"entities": [(308, 363, "SCHEDULED_TEXT:NAME OF PERSON OR ORGANIZATION")]}
-# #   ),
-# #   (
-# #       'POLICY NUMBER: 5050-0419-16 COMMERCIAL GENERAL LIABILITY CG 25 03 05 09 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. DESIGNATED CONSTRUCTION PROJECT(S) GENERAL AGGREGATE LIMIT This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Designated Construction Project(s): ALL PROJECTS OF THE NAMED INSURED Information required to complete this Schedule , if not shown above, will be shown in the Declarations.',
-# #       {"entities": [(312, 381, 'SCHEDULED_TEXT:DESIGNATED CONSTRUCTION PROJECT(S)')]}
-# #   ),
-# #   (
-# #       'POLICY NUMBER: 5050-0419-16 COMMERCIAL GENERAL LIABILITY CG 25 04 05 09 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. DESIGNATED LOCATION(S) GENERAL AGGREGATE LIMIT This endorsement modifies insurance provided under the following : COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Designated Location(s): ALL LOCATIONS OF THE NAMED INSURED SCHEDULED ON THIS POLICY Information required to complete this Schedule , if not shown above . will be shown in the Declarations.',
-# #       {"entities": [(301, 384 , "SCHEDULED_TEXT:PROJECT_LOCATION")]}
-# #   ),
-# #   (
-# #       'IL 09 85 01 08THIS ENDORSEMENT IS ATTACHED TO AND MADE PART OF YOUR POLICY IN RESPONSE TO THE DISCLOSURE REQUIREMENTS OF THE TERRORISM RISK INSURANCE ACT. THIS ENDORSEMENT DOES NOT GRANT ANY COVERAGE OR CHANGE THE TERMS AND CONDITIONS OF ANY COVERAGE UNDER THE POLICY.  IL 09 85 01 08 © ISO Properties, Inc., 2007  Page 1 of 1DISCLOSURE PURSUANT TO TERRORISM RISK  INSURANCE ACT SCHEDULE Terrorism Premium (Certified Acts) $   This premium is the total Certified Acts premium attributable to the following Coverage Part(s), Cover-age Form(s) and/or Policy(s): Additional information, if any, concerning the terrorism premium: Information required to complete this Schedule, if  not shown above, will be shown in the Declarations.',
-# #       {"entities": [(388, 625, "SCHEDULED_TEXT:Terrorism Premium")]}
-# #   )
+#   (
+#       'POLICY NUMBER: COMMERCIAL GENERAL LIABILITY CG 20 37 0413 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. ADDITIONAL INSURED -OWNERS, LESSEES OR CONTRACTORS -COMPLETED OPERATIONS This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART PRODUCTS/COMPLETED OPERATIONS LIABILITY COVERAGE PART SCHEDULE Name Of Additional Insured Person(s) Or Organization(s) Location And Description Of Completed Ooerations As required by written contract executed prior to As required by written contract executed prior to the date of an occurrence. the date of an occurrence. Information required to complete this Sched ule, if not shown above, will be shown in the Declarations.',
+#       {"entities": [( 366, 597, "SCHEDULED_TEXT:ADDITIONAL_INSURED_AND_PROJECT_LOCATION")]}
+#   ),
+#   (
+#       'POLICY NUMBER: 5050-0419-16 COMMERCIAL GENERAL LIABILITY THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. EXCLUSION -DESIGNATED PROJECT POLICY This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART PRODUCTS/COMPLETED OPERATIONS LIABILITY COVERAGE PART SCHEDULE Description of your work: "ALL WORK AND PROJECTS INSURED SEPERATELY UNDER A DESIGNATED PROJECT POLICY. HOWEVER THIS EXCLUSION DOES NOT APPLY TO CONSOLIDATED (WRAP-UP) INSURANCE PROGRAMS." (If no entry appears above, information required to complete this endorsement will be shown in the Declarations as applicable to this endorsement.)',
+#       {"entities": [(329, 516, "SCHEDULED_TEXT:PROJECT POLICY EXCLUSION")]}
+#   ),
+#   (
+#       'POLICY NUMBER: 5050-0419-16 COMMERCIAL GENERAL LIABILITY CG 215301 96 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. EXCLUSION -DESIGNATED PROJECT POLICY This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Description of Designated Ongoing Operation(s): "ALL WORK AND PROJECTS INSURED SEPERATELY UNDER A DESIGNATED PROJECT POLICY. HOWEVER THIS EXCLUSION DOES NOT APPLY TO CONSOLIDATED (WRAP-UP) INSURANCE PROGRAMS." Specified Location (If Applicable): "ALL WORK AND PROJECTS INSURED SEPERATELY UNDER A DESIGNATED PROJECT POLICY. HOWEVER THIS EXCLSUION DOES NOT APPLY TO CONSOLIDATED (WRAP-UP) INSURANCE PROGRAMS." (If no entry appears above, information required to complete this endorsement will be shown in the Declarations as applicable to this endorsement.)',
+#       {"entities": [(288, 497, "SCHEDULED_TEXT:DESCRIPTION OF DESIGNATED ONGOING OPERATION(S)"), (498, 695, "SCHEDULED_TEXT: PROJECT_LOCATION")]}
+#   ),
+#   (
+#       'POLICY NUMBER: 5050-0419-16 COMMERCIAL GENERAL LIABILITY CG 215401 96 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. EXCLUSION -DESIGNATED OPERATIONS COVERED BY A CONSOLIDATED (WRAP-UP) INSURANCE PROGRAM This endorsement modifies insurance provided under the following : COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Description and Location of Operation(s): ALL WRAP-UPS (If no entry appears above, information required to complete this endorsement will be shown in the Declarations as applicable to this endorsement.)',
+#       {"entities": [(339, 393, "SCHEDULED_TEXT:DESCRIPTION AND LOCATION OF OPERATION(S)")]}
+#   ),
+#   (
+#       'POLICY NUMBER: 5050-0419-16 COMMERCIAL GENERAL LIABILITY CG 24 04 05 09 WAIV ER OF TRANSFER OF RIGHTS OF RECOVERY AGAINST OTHERS TO US This endorsement modifies insurance provided under the following : COMMERCIAL GENERAL LIABILITY COVERAGE PART PRODUCTS/COMPLETED OPERATIONS LIABILITY COVERAGE PART SCHEDULE Name Of Person Or Organization: AS PER WRITTEN CONTRACT Inform ation required to comp lete this Schedule , if not shown above , will be shown in the Declarations .',
+#       {"entities": [(308, 363, "SCHEDULED_TEXT:NAME OF PERSON OR ORGANIZATION")]}
+#   ),
+#   (
+#       'POLICY NUMBER: 5050-0419-16 COMMERCIAL GENERAL LIABILITY CG 25 03 05 09 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. DESIGNATED CONSTRUCTION PROJECT(S) GENERAL AGGREGATE LIMIT This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Designated Construction Project(s): ALL PROJECTS OF THE NAMED INSURED Information required to complete this Schedule , if not shown above, will be shown in the Declarations.',
+#       {"entities": [(312, 381, 'SCHEDULED_TEXT:DESIGNATED CONSTRUCTION PROJECT(S)')]}
+#   ),
+#   (
+#       'POLICY NUMBER: 5050-0419-16 COMMERCIAL GENERAL LIABILITY CG 25 04 05 09 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. DESIGNATED LOCATION(S) GENERAL AGGREGATE LIMIT This endorsement modifies insurance provided under the following : COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Designated Location(s): ALL LOCATIONS OF THE NAMED INSURED SCHEDULED ON THIS POLICY Information required to complete this Schedule , if not shown above . will be shown in the Declarations.',
+#       {"entities": [(301, 384 , "SCHEDULED_TEXT:PROJECT_LOCATION")]}
+#   ),
+#   (
+#       'IL 09 85 01 08THIS ENDORSEMENT IS ATTACHED TO AND MADE PART OF YOUR POLICY IN RESPONSE TO THE DISCLOSURE REQUIREMENTS OF THE TERRORISM RISK INSURANCE ACT. THIS ENDORSEMENT DOES NOT GRANT ANY COVERAGE OR CHANGE THE TERMS AND CONDITIONS OF ANY COVERAGE UNDER THE POLICY.  IL 09 85 01 08 © ISO Properties, Inc., 2007  Page 1 of 1DISCLOSURE PURSUANT TO TERRORISM RISK  INSURANCE ACT SCHEDULE Terrorism Premium (Certified Acts) $   This premium is the total Certified Acts premium attributable to the following Coverage Part(s), Cover-age Form(s) and/or Policy(s): Additional information, if any, concerning the terrorism premium: Information required to complete this Schedule, if  not shown above, will be shown in the Declarations.',
+#       {"entities": [(388, 625, "SCHEDULED_TEXT:Terrorism Premium")]}
+#   )
+# ]
+
+
+
+# TRAIN_DATA = [
+#     ('Scrumptuous cheesecake', {'entities': [(12, 22, "Dessert")]}),
+#     ('Dimsum is a large range of small Cantonese dishes that are traditionally enjoyed in restaurants for brunch.', {'entities': [(0, 6, "Food")]}),
+#     ('Nice curry', {'entities': [(5, 10, "Food")]}),
+#     ('Lou Groen invented the FiletOFish sandwich in the 60s.', {'entities': [(23, 33, "Seafood")]})
 # ]
 
 
 
 
+
+# TRAIN_DATA = [
+#   (
+#       'POLICY NUMBER: 1TPM NY1701234898 COMMERCIAL GENERAL LIABILITY CG 04 35 12 07 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. CG 04 35 12 07 © ISO Properties, Inc., 2006 Page 1 of 7  EMPLOYEE BENEFITS LIABILITY COVERAGE THIS ENDORSEMENT PROVIDES CLAIMSMADE COVERAGE. PLEASE READ THE ENTIRE ENDORSEMENT CAREFULLY. This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Coverage Limit Of Insurance Each Employee Deductible Premium Employee Benefits Programs $ 1,000,000 each e mployee $ 1,000 $ Included $ 1,000,000 aggregate Retroactive Date: 05/01/2018 Information required to complete this Schedule, if not shown a bove, will be shown i n the Declarations.',
+#       {"entities": [(446, 630, "SCHEDULED_TEXT:COVERAGE")]}
+#   ),
+#   (
+#       'POLICY NUMBER: 1TPM NY1701234898 COMMERCIAL GENERAL LIABILITY CG 20 10 04 13 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. CG 20 10 04 13 © Insurance Services Office, Inc., 2012 Page 1 of 2 ADDITIONAL INSURED  OWNERS, LESSEES OR CONTRACTORS  SCHEDULED PERSON OR ORGANIZATION This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Name Of Additional Insured Pe rson(s) Or Or ganiz ation(s) Location(s) Of Covered Oper ations As Required by Written Contract executed prior to any claim or “suit.” As Required by Written Contract executed prior to any claim or “suit.” Information required to complete this Schedule, if not shown above, will be shown in the Declarations.',
+#       {"entities": [(410, 574, "SCHEDULED_TEXT:ADDITIONAL_INSURED")]}
+#   ),
+#   (
+#       'POLICY NUMBER: 1TPM NY1701234898 COMMERCIAL GENERAL LIABILITY CG 20 12 04 13 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. CG 20 12 04 13 © Insurance Services Office, Inc., 2012 Page 1 of 1 ADDITIONAL INSURED  STATE OR GOVERNMENTAL AGENCY OR SUBDIVISION OR POLITICAL SUBDIVISION  PERMITS OR AUTHORIZATIONS This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE State Or Gove rnmental Agency Or Subdivision Or Political Subdivision: As Required by Written Contract executed prior to any claim or “suit.” Information required to complete this Schedule, if not shown above, will be shown in the Declarations.',
+#       {"entities": [(441, 582, "SCHEDULED_TEXT:STATE_OR_GOVERNMENTAL_AGENCY_OR_SUBDIVISION_OR_POLITICAL SUBDIVISION")]}
+#   ),
+#   (
+#       'POLICY NUMBER: 1TPM NY1701234898 COMMERCIAL GENERAL LIABILITY CG 20 28 04 13 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. CG 20 28 04 13 © Insurance Services Office, Inc., 2012 Page 1 of 1 ADDITIONAL INSURED  LESSOR OF LEASED EQUIPMENT This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Name Of Additional Insured Person(s) Or Organization(s): $s 5HTuirHG Ey :rittHn &ontract H[HcutHG Srior to any claim or “suit.” Information required to c omplete this Schedule, if not shown above, will be shown in the Declarations.', 
+#       {"entities": [(372, 499, "SCHEDULED_TEXT:ADDITIONAL_INSURED")]}
+#   ),
+#   (
+#       'POLICY NUMBER: 1TPM NY1701234898 COMMERCIAL GENERAL LIABILITY CG 20 37 04 13 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. CG 20 37 04 13 © Insurance Services Office, In c., 2012 Page 1 of 1 ADDITIONAL INSURED  OWNERS, LESSEES OR CONTRACTORS  COMPLETED OPERATIONS This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART PRODUCTS/COMPLETED OPERATIONS LIABILITY COVERAGE PART SCHEDULE Name Of Additional Insured Person(s) Or Organiz ation(s) Location And Description Of Completed Oper ations As Required by Written Contract executed prior to any claim or “suit.” As Required by Written Contract executed prior to any claim or “suit.” Information required to complete this Schedule, if not shown above, will be shown in the Declarations.',
+#       {"entities": [(453, 630, "SCHEDULED_TEXT:ADDITIONAL_INSURED")]}
+#   ), 
+#   (
+#       'POLICY NUMBER: 1TPM NY1701234898 COMMERCIAL GENERAL LIABILITY CG 21 54 01 96 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. CG 21 54 01 96 Copyright, Insurance Services Office, Inc., 1994 Page 1 of 1  EXCLUSION  DESIGNATED OPERATIONS COVERED BY A CONSOLIDATED (WRAPUP) INSURANCE PROGRAM This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Description and Location of Operation(s): All operations where the Named Insured is enrolled in and insured under a consolidated (wrapup) insurance program. (If no entry appears above, information required to complete this endorsement will be shown in the Declarations as applicable to this endorsement.)',
+#       {"entities": [(422, 578, "SCHEDULED_TEXT:Description_and_Location_of_Operation(s)")]}
+#   ),
+#   (
+#       'POLICY NUMBER: 1TPM NY1701234898 COMMERCIAL GENERAL LIABILITY CG 25 04 05 09 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. CG 25 04 05 09 © Insurance Services Office, Inc., 2008 Page 1 of 2  DESIGNATED LOCATION(S) GENERAL AGGREGATE LIMIT This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Designated Location(s): “Each “Project”: for which you have agreed, in written contract which is in effect during this policy period, to provide a separate general aggregate limit; provided that the contract is signed and executed by you before the “bodily Injury” or “property damage” occurs.” Information required to complete this Schedule, if not shown above, will be shown in the Declarations.',
+#       {"entities": [(374, 666, "SCHEDULED_TEXT:PROJECT_LOCATION")]}
+#   ),
+#   (
+#       'Named Insured: RYTY Construction Co Effective Date of Endorsement: May 23 , 2017 Policy Number: PSS1700166 Endorsement #33 is deleted and replaced with the following: ENDORSEMENT #48 COMMERCIAL GENERAL LIABILITY CG 24 17 10 01 CONTRACTUAL LIABILITY  RAILROADS This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Scheduled Railroad: Designated Job Site: (If no entry appears above, information required to complete this endorsement will be shown in the Declarations as applicable to this endorsement.)',
+#       {"entities": [(388, 396, "SCHEDULED_TEXT:RAILROAD"), (398, 417, "SCHEDULED_TEXT:PROJECT_COVERAGE")]}
+#   ), 
+#   (
+#       'POLICY NUMBER: COMMERCIAL GENERAL LIABILITY CG 20 10 0413 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. ADDITIONAL INSURED OWNERS, LESSEES OR CONTRACTORS SCHEDULED PERSON OR ORGANIZATION This endorsement modifies insurance provided under the following : COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Name Of Additional Insured Person(s) Or Organization(s) Location(s) Of Covered Operations As required by written contract executed prior to the As required by writte n contract executed prior to date of an occurrence. the date of an occurrence. Information required to comp lete this Schedule , if not shown above , will be shown in the Declarations.',
+#       {"entities": [(323, 539, "SCHEDULED_TEXT:ADDITIONAL_INSURED_AND_PROJECT_LOCATION")]}
+#   ),
+#   (
+#       'POLICY NUMBER: 5050041916 COMMERCIAL GENERAL LIABILITY CG 24 04 05 09 WAIV ER OF TRANSFER OF RIGHTS OF RECOVERY AGAINST OTHERS TO US This endorsement modifies insurance provided under the following : COMMERCIAL GENERAL LIABILITY COVERAGE PART PRODUCTS/COMPLETED OPERATIONS LIABILITY COVERAGE PART SCHEDULE Name Of Person Or Organization: AS PER WRITTEN CONTRACT Inform ation required to comp lete this Schedule , if not shown above , will be shown in the Declarations .',
+#       {"entities": [(306, 361, "SCHEDULED_TEXT:NAME_OF_PERSON_OR_ORGANIZATION")]}
+#   ),
+# ]
+
+
+
 TRAIN_DATA = [
   (
-      'POLICY NUMBER: 1TPM NY1701234898 COMMERCIAL GENERAL LIABILITY  CG 04 35 12 07  THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. CG 04 35 12 07 © ISO Properties, Inc., 2006  Page 1 of 7  EMPLOYEE BENEFITS LIABILITY COVERAGE THIS ENDORSEMENT PROVIDES CLAIMSMADE COVERAGE. PLEASE READ THE ENTIRE ENDORSEMENT CAREFULLY. This endorsement modifies insurance provided under the following:  COMMERCIAL GENERAL LIABILITY COVERAGE PART  SCHEDULE Coverage Limit Of Insurance Each Employee Deductible Premium Employee Benefits Programs $ 1,000,000 each e mployee $ 1,000 $ Included $ 1,000,000 aggregate Retroactive Date: 05/01/2018 Information required to complete this Schedule, if not shown a bove, will be shown i n the Declarations.',
-      {"entities": [(471, 667, "SCHEDULED_TEXT:COVERAGE")]}
+      'policy number: 1tpm ny1701234898 commercial general liability cg 04 35 12 07 this endorsement changes the policy. please read it carefully. cg 04 35 12 07 © iso properties, inc., 2006 page 1 of 7  employee benefits liability coverage this endorsement provides claimsmade coverage. please read the entire endorsement carefully. this endorsement modifies insurance provided under the following: commercial general liability coverage part schedule coverage limit of insurance each employee deductible premium employee benefits programs $ 1,000,000 each e mployee $ 1,000 $ included $ 1,000,000 aggregate retroactive date: 05/01/2018 information required to complete this schedule, if not shown a bove, will be shown i n the declarations.',
+      {"entities": [(446, 630, "SCHEDULED_TEXT:COVERAGE")]}
   ),
   (
-      'POLICY NUMBER: 1TPM NY1701234898 COMMERCIAL GENERAL LIABILITY  CG 20 10 04 13  THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY.    CG 20 10 04 13 © Insurance Services Office, Inc., 2012  Page 1 of 2  ADDITIONAL INSURED – OWNERS, LESSEES OR CONTRACTORS – SCHEDULED PERSON OR ORGANIZATION This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART  SCHEDULE Name Of Additional Insured Pe rson(s) Or Or ganiz ation(s) Location(s) Of Covered Oper ations As Required by Written Contract executed prior to any claim or “suit.”  As Required by Written Contract executed prior to any claim or “suit.”    Information required to complete this Schedule, if not shown above, will be shown in the Declarations.',
-      {"entities": [(442, 683, "SCHEDULED_TEXT:ADDITIONAL_INSURED_AND_PROJECT_LOCATION")]}
+      'policy number: 1tpm ny1701234898 commercial general liability cg 20 10 04 13 this endorsement changes the policy. please read it carefully. cg 20 10 04 13 © insurance services office, inc., 2012 page 1 of 2 additional insured  owners, lessees or contractors  scheduled person or organization this endorsement modifies insurance provided under the following: commercial general liability coverage part schedule name of additional insured pe rson(s) or or ganiz ation(s) location(s) of covered oper ations as required by written contract executed prior to any claim or “suit.” as required by written contract executed prior to any claim or “suit.” information required to complete this schedule, if not shown above, will be shown in the declarations.',
+      {"entities": [(410, 574, "SCHEDULED_TEXT:ADDITIONAL_INSURED")]}
   ),
   (
-      'POLICY NUMBER: 1TPM NY1701234898 COMMERCIAL GENERAL LIABILITY  CG 20 12 04 13  THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. CG 20 12 04 13 © Insurance Services Office, Inc., 2012 Page 1 of 1  ADDITIONAL INSURED – STATE OR GOVERNMENTAL AGENCY OR SUBDIVISION OR POLITICAL SUBDIVISION – PERMITS OR AUTHORIZATIONS This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE State Or Gove rnmental Agency Or Subdivision Or Political Subdivision: As Required by Written Contract executed prior to any claim or “suit.”  Information required to complete this Schedule, if not shown above, will be shown in the Declarations.',
-      {"entities": [(466, 608, "SCHEDULED_TEXT:STATE_OR_GOVERNMENTAL_AGENCY_OR_SUBDIVISION_OR_POLITICAL SUBDIVISION")]}
+      'policy number: 1tpm ny1701234898 commercial general liability cg 20 12 04 13 this endorsement changes the policy. please read it carefully. cg 20 12 04 13 © insurance services office, inc., 2012 page 1 of 1 additional insured  state or governmental agency or subdivision or political subdivision  permits or authorizations this endorsement modifies insurance provided under the following: commercial general liability coverage part schedule state or gove rnmental agency or subdivision or political subdivision: as required by written contract executed prior to any claim or “suit.” information required to complete this schedule, if not shown above, will be shown in the declarations.',
+      {"entities": [(441, 582, "SCHEDULED_TEXT:STATE_OR_GOVERNMENTAL_AGENCY_OR_SUBDIVISION_OR_POLITICAL SUBDIVISION")]}
   ),
   (
-      'POLICY NUMBER: 1TPM NY1701234898 COMMERCIAL GENERAL LIABILITY  CG 20 28 04 13  THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. CG 20 28 04 13 © Insurance Services Office, Inc., 2012 Page 1 of 1  ADDITIONAL INSURED – LESSOR OF LEASED EQUIPMENT This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Name Of Additional Insured Person(s) Or Organization(s): $s 5HTuirHG Ey :rittHn &ontract H[HcutHG Srior to any claim or “suit.”  Information required to c omplete this Schedule, if not shown above, will be shown in the Declarations.', 
-      {"entities": [(376, 502, "SCHEDULED_TEXT:ADDITIONAL_INSURED")]}
+      'policy number: 1tpm ny1701234898 commercial general liability cg 20 28 04 13 this endorsement changes the policy. please read it carefully. cg 20 28 04 13 © insurance services office, inc., 2012 page 1 of 1 additional insured  lessor of leased equipment this endorsement modifies insurance provided under the following: commercial general liability coverage part schedule name of additional insured person(s) or organization(s): $s 5htuirhg ey :ritthn &ontract h[hcuthg srior to any claim or “suit.” information required to c omplete this schedule, if not shown above, will be shown in the declarations.', 
+      {"entities": [(372, 499, "SCHEDULED_TEXT:ADDITIONAL_INSURED")]}
   ),
   (
-      'POLICY NUMBER: 1TPM NY1701234898 COMMERCIAL GENERAL LIABILITY  CG 20 37 04 13  THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. CG 20 37 04 13 © Insurance Services Office, In c., 2012 Page 1 of 1  ADDITIONAL INSURED – OWNERS, LESSEES OR CONTRACTORS – COMPLETED OPERATIONS This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART PRODUCTS/COMPLETED OPERATIONS LIABILITY COVERAGE PART  SCHEDULE Name Of Additional Insured Person(s) Or Organiz ation(s) Location And Description Of Completed Oper ations As Required by Written Contract executed prior to any claim or “suit.”  As Required by Written Contract executed prior to any claim or “suit.”   Information required to complete this Schedule, if not shown above, will be shown in the Declarations.',
-      {"entities": [(459, 636, "SCHEDULED_TEXT:ADDITIONAL_INSURED_AND_PROJECT_LOCATION")]}
-  ),
-  
+      'policy number: 1tpm ny1701234898 commercial general liability cg 20 37 04 13 this endorsement changes the policy. please read it carefully. cg 20 37 04 13 © insurance services office, in c., 2012 page 1 of 1 additional insured  owners, lessees or contractors  completed operations this endorsement modifies insurance provided under the following: commercial general liability coverage part products/completed operations liability coverage part schedule name of additional insured person(s) or organiz ation(s) location and description of completed oper ations as required by written contract executed prior to any claim or “suit.” as required by written contract executed prior to any claim or “suit.” information required to complete this schedule, if not shown above, will be shown in the declarations.',
+      {"entities": [(453, 630, "SCHEDULED_TEXT:ADDITIONAL_INSURED")]}
+  ), 
   (
-      'POLICY NUMBER: 1TPM NY1701234898 COMMERCIAL GENERAL LIABILITY CG 21 54 01 96 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. CG 21 54 01 96 Copyright, Insurance Services Office, Inc., 1994 Page 1 of 1  EXCLUSION – DESIGNATED OPERATIONS COVERED BY A CONSOLIDATED (WRAPUP) INSURANCE PROGRAM This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Description and Location of Operation(s): All operations where the Named Insured is enrolled in and insured under a consolidated (wrapup) insurance program. (If no entry appears above, information required to complete this endorsement will be shown in the Declarations as applicable to this endorsement.)',
-      {"entities": [(423, 578, "SCHEDULED_TEXT:PROJECT_LOCATION")]}
+      'policy number: 1tpm ny1701234898 commercial general liability cg 21 54 01 96 this endorsement changes the policy. please read it carefully. cg 21 54 01 96 copyright, insurance services office, inc., 1994 page 1 of 1  exclusion  designated operations covered by a consolidated (wrapup) insurance program this endorsement modifies insurance provided under the following: commercial general liability coverage part schedule description and location of operation(s): all operations where the named insured is enrolled in and insured under a consolidated (wrapup) insurance program. (if no entry appears above, information required to complete this endorsement will be shown in the declarations as applicable to this endorsement.)',
+      {"entities": [(422, 578, "SCHEDULED_TEXT:Description_and_Location_of_Operation(s)")]}
   ),
   (
-      'POLICY NUMBER: 1TPM NY1701234898 COMMERCIAL GENERAL LIABILITY CG 24 04 05 09 CG 24 04 05 09 © Insuranc e Services Office, Inc., 2008 Page 1 of 1  WAIVER OF TRANSFER OF RIGHTS OF RECOVERY AGAINST OTHERS TO US This endorsement modifies insurance provided under the following: COMMERCIAL GENERAL LIABILITY COVERAGE PART PRODUCTS/COMPLETED OPERATIONS LIABILITY COVERAGE PART SCHEDULE Name Of Person Or Organization: As Required by Written Contract executed prior to any claim or “suit .” Information required to complete this Schedule, if not shown above, will be shown in the Declarations. The following is added to Paragraph 8. Transfer Of Rights Of Recovery Against Others To Us of Section IV  Conditions: We waive any right of recovery we may have against the person or organization shown in the Schedule above because of payments we make for injury or damage arising out of your ongoing operations or "your work" done under a contract with that person or organization and included in the "productscompleted operations hazard". This waiver applies only to the person or organization shown in the Schedule above. CG 24 04 05 09 © Insurance Services Office, Inc., 2008 Page 1 of 1',
-      {"entities": [(381, 484, "SCHEDULED_TEXT:NAME_OF_PERSON_OR_ORGANIZATION")]}
-  )
+      'policy number: 1tpm ny1701234898 commercial general liability cg 25 04 05 09 this endorsement changes the policy. please read it carefully. cg 25 04 05 09 © insurance services office, inc., 2008 page 1 of 2  designated location(s) general aggregate limit this endorsement modifies insurance provided under the following: commercial general liability coverage part schedule designated location(s): “each “project”: for which you have agreed, in written contract which is in effect during this policy period, to provide a separate general aggregate limit; provided that the contract is signed and executed by you before the “bodily injury” or “property damage” occurs.” information required to complete this schedule, if not shown above, will be shown in the declarations.',
+      {"entities": [(374, 666, "SCHEDULED_TEXT:PROJECT_LOCATION")]}
+  ),
+  (
+      'named insured: ryty construction co effective date of endorsement: may 23 , 2017 policy number: pss1700166 endorsement #33 is deleted and replaced with the following: endorsement #48 commercial general liability cg 24 17 10 01 contractual liability  railroads this endorsement modifies insurance provided under the following: commercial general liability coverage part schedule scheduled railroad: designated job site: (if no entry appears above, information required to complete this endorsement will be shown in the declarations as applicable to this endorsement.)',
+      {"entities": [(388, 396, "SCHEDULED_TEXT:RAILROAD"), (398, 417, "SCHEDULED_TEXT:PROJECT_COVERAGE")]}
+  ), 
+  (
+      'policy number: commercial general liability cg 20 10 0413 this endorsement changes the policy. please read it carefully. additional insured owners, lessees or contractors scheduled person or organization this endorsement modifies insurance provided under the following : commercial general liability coverage part schedule name of additional insured person(s) or organization(s) location(s) of covered operations as required by written contract executed prior to the as required by writte n contract executed prior to date of an occurrence. the date of an occurrence. information required to comp lete this schedule , if not shown above , will be shown in the declarations.',
+      {"entities": [(323, 539, "SCHEDULED_TEXT:ADDITIONAL_INSURED_AND_PROJECT_LOCATION")]}
+  ),
+  (
+      'policy number: 5050041916 commercial general liability cg 24 04 05 09 waiv er of transfer of rights of recovery against others to us this endorsement modifies insurance provided under the following : commercial general liability coverage part products/completed operations liability coverage part schedule name of person or organization: as per written contract inform ation required to comp lete this schedule , if not shown above , will be shown in the declarations .',
+      {"entities": [(306, 361, "SCHEDULED_TEXT:NAME_OF_PERSON_OR_ORGANIZATION")]}
+  ),
 ]
 
