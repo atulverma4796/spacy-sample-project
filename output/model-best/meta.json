@@ -17,32 +17,19 @@
     "mode":"default"
   },
   "labels":{
+    "tok2vec":[
+
+    ],
     "ner":[
-      "CARDINAL",
-      "DATE",
-      "EVENT",
-      "FAC",
-      "GPE",
-      "LANGUAGE",
-      "LAW",
-      "LOC",
-      "MONEY",
-      "NORP",
-      "ORDINAL",
-      "ORG",
-      "PERCENT",
-      "PERSON",
-      "PRODUCT",
-      "QUANTITY",
-      "SCHEDULED_TEXT:EXCLUSION_WORK_HEIGHT",
-      "TIME",
-      "WORK_OF_ART"
+      "SCHEDULED_TEXT:NAME_OF_PERSON_OR_ORGANIZATION"
     ]
   },
   "pipeline":[
+    "tok2vec",
     "ner"
   ],
   "components":[
+    "tok2vec",
     "ner"
   ],
   "disabled":[
@@ -53,12 +40,13 @@
     "ents_p":1.0,
     "ents_r":1.0,
     "ents_per_type":{
-      "SCHEDULED_TEXT:EXCLUSION_WORK_HEIGHT":{
+      "SCHEDULED_TEXT:NAME_OF_PERSON_OR_ORGANIZATION":{
         "p":1.0,
         "r":1.0,
         "f":1.0
       }
     },
-    "ner_loss":0.0000003262
+    "tok2vec_loss":0.0000000051,
+    "ner_loss":0.0000000471
   }
 }
