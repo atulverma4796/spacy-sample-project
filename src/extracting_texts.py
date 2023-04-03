@@ -1,19 +1,27 @@
 from PyPDF2 import PdfReader
 import spacy
-from training_data_generation import generateTrainingDataText
+from helper_functions import normalize_text
+from training_data_generation import generateTrainingDataText, phraseMatcher
 
-reader = PdfReader("src/samples/Hudson.pdf")
+reader = PdfReader("src/samples/schedule_text1.pdf")
 number_of_pages = len(reader.pages)
 nlp = spacy.load("en_core_web_sm")
 
-  
+texts = []
+training_data_set = []
+
 for i in range(number_of_pages):
-    if i == 55:
+    if (i == 4):
         page = reader.pages[i]
-        # text = page.extract_text()    
-        text = 'POLICY NUMBER: 5050-0419-16 COMMERCIAL GENERAL LIABILITY CG 24 04 05 09 WAIV ER OF TRANSFER OF RIGHTS OF RECOVERY AGAINST OTHERS TO US This endorsement modifies insurance provided under the following : COMMERCIAL GENERAL LIABILITY COVERAGE PART PRODUCTS/COMPLETED OPERATIONS LIABILITY COVERAGE PART SCHEDULE Name Of Person Or Organization: AS PER WRITTEN CONTRACT Inform ation required to comp lete this Schedule , if not shown above , will be shown in the Declarations .'
-        startText = 'Name Of Person'
-        endText = 'WRITTEN CONTRACT'
-        trainingDataText = generateTrainingDataText(text, startText, endText)
-        print('trainingDataText: ', trainingDataText)
-             
+        text = page.extract_text()    
+        startText = 'name of additional insured'
+        endText = '“suit.”'
+        text = normalize_text(text)
+        texts.append(text)
+        training_data = phraseMatcher(text)
+        if training_data:
+            training_data_set.append(training_data)
+            
+print('training_data_set: ', training_data_set)      
+            
+       
