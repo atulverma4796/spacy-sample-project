@@ -96,7 +96,10 @@ def generateTrainingDataSetFromPDF(pdfFile):
         text = normalize_text(text)
 
         texts.append(text)
-        training_data = phraseMatcher(text)
+        
+        # training_data = phraseMatcher(text)
+        training_data = phraseMatcherInSentences(text)
+        
         if training_data:
             training_data_set.append(training_data)
             
@@ -108,12 +111,11 @@ def generateTextsDataSetFromPDF(pdfFile):
     number_of_pages = len(reader.pages)
     texts = []
     for i in range(number_of_pages):
-        if (i == 14):
-            page = reader.pages[i]
-            text = page.extract_text()    
-            text = normalize_text(text)
-            if text:
-                texts.append(text)    
+        page = reader.pages[i]
+        text = page.extract_text()    
+        text = normalize_text(text)
+        if text:
+            texts.append(text)    
     return texts
 
 
@@ -128,6 +130,7 @@ def phraseMatcherInSentences(text):
     
     # List of Patterns To Match For
     phrases = [
+        'name of additional insured person'
         'name of additional insured person(s) or organization(s)', 
         'name of additional insured person(s) or orga nization(s)', 
         'location(s) of covered operations',
@@ -170,29 +173,6 @@ def phraseMatcherInSentences(text):
         )
     
     return training_data
-
-
-def sentenceExtraction():
-    pdfFile = "src/samples/Additional-Insureds-Training.pdf"
-
-    reader = PdfReader(pdfFile)
-    number_of_pages = len(reader.pages)
-                
-    texts = []
-    training_data_set = []
-
-    for i in range(number_of_pages):
-        if (i == 1):
-            page = reader.pages[i]
-            text = page.extract_text()    
-            text = normalize_text(text)
-
-            texts.append(text)
-            training_data = phraseMatcherInSentences(text)
-            if training_data:
-                training_data_set.append(training_data)
-            
-    return training_data_set
 
 
 pdfFile = "src/samples/Additional_Insureds_Training_Two.pdf"
