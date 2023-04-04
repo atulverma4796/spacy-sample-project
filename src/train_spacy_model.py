@@ -2,38 +2,76 @@ import random
 import spacy
 from pathlib import Path
 from tqdm import tqdm 
+import spacy
 from spacy.tokens import DocBin
 from spacy.util import minibatch, compounding
 from pathlib import Path
-from spacy.training import Example 
+from spacy.training.example import Example 
 from training_data import TRAIN_DATA
 
 model = None
 num_of_iterations = 10
 
 #load the model
-if model is not None:
-    nlp = spacy.load(model)  
-    print("Loaded model '%s'" % model)
-else:
-    nlp = spacy.blank('en')  
-    print("Created blank 'en' model")
+# if model is not None:
+#     nlp = spacy.load(model)  
+#     print("Loaded model '%s'" % model)
+# else:
+#     nlp = spacy.blank('en')
+#     if "ner" not in nlp.pipe_names:
+#         ner = nlp.create_pipe("ner")
+#         nlp.add_pipe(ner,last=True) 
+#     print("Created blank 'en' model")
+def train_spacy(data,iterations):
+    
+    nlp = spacy.blank('en')
+    if "ner" not in nlp.pipe_names:
+        # ner = nlp.add_pipe("ner")
+         ner = nlp.add_pipe('ner',last=True) 
+    for _,annotations in data:
+        for ent in annotations.get("entities"):
+            ner.add_label(ent[2])
+    other_pipes = [pipe for pipe in nlp.pipe_names if pipe!= "ner"]
+    with nlp.disable_pipes(*other_pipes):
+        optimizer = nlp.begin_training()
+        for itn in range(iterations):
+            print("Start iteration ",str(itn))
+            random.shuffle(data)
+            losses={}
+            for batch in spacy.util.minibatch(data,size=2):
+                for  text, annotations in  batch:
+                    doc = nlp.make_doc(text)
+                    example = Example.from_dict(doc, annotations)
+                    nlp.update(
+                       [example],
+                        drop=0.2,
+                        sgd=optimizer,
+                        losses=losses
+                    ) 
+    
+                    print(losses)
+    nlp.to_disk('./train.spacy')   
+                    
 
-for text, annot in tqdm(TRAIN_DATA): 
-    db = DocBin()
-    doc = nlp.make_doc(text) # create doc object from text
-    ents = []
-    for start, end, label in annot["entities"]: # add character indexes
-        span = doc.char_span(start, end, label=label, alignment_mode="contract")
-        if span is None:
-            print("Skipping entity")
-        else:
-            ents.append(span)
-    doc.ents = ents # label the text with the ents
-    print('doc.ents: ', doc.ents)
-    db.add(doc)
+                
+                    
 
-db.to_disk("./train.spacy") 
+nlp =  train_spacy(TRAIN_DATA,num_of_iterations)  
+# for text, annot in tqdm(TRAIN_DATA): 
+#     db = DocBin()
+#     doc = nlp.make_doc(text) # create doc object from text
+#     ents = []
+#     for start, end, label in annot["entities"]: # add character indexes
+#         span = doc.char_span(start, end, label=label, alignment_mode="contract")
+#         if span is None:
+#             print("Skipping entity")
+#         else:
+#             ents.append(span)
+#     doc.ents = ents # label the text with the ents
+#     print('doc.ents: ', doc.ents)
+#     db.add(doc)
+
+# db.to_disk("./train.spacy") 
 
 
 
@@ -96,8 +134,8 @@ db.to_disk("./train.spacy")
 #         # print("Tokens", [(t.text, t.ent_type_, t.ent_iob) for t in doc])
 
 #     # save model to output directory
-#     if output_dir is not None:
-#         output_dir = Path(output_dir)
+    # if output_dir is not None:
+        # output_dir = Path(output_dir)
 #         if not output_dir.exists():
 #             print("output_dir NOT EXISTS")
 #             output_dir.mkdir()
