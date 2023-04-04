@@ -91,7 +91,7 @@ from training_data_generation import generateTrainingDataSetFromPDF
 
 
 def train_spacy(model=None, output_dir=None, n_iter=50):
-    pdfFile = "src/samples/Additional_Insureds_Training_One.pdf"
+    pdfFile = "src/samples/Additional-Insureds-Training.pdf"
     TRAIN_DATA = generateTrainingDataSetFromPDF(pdfFile)
     # print('TRAIN_DATA: ', TRAIN_DATA)
     
@@ -143,7 +143,7 @@ def train_spacy(model=None, output_dir=None, n_iter=50):
                     example.append(Example.from_dict(doc, annotations[i]))
                 # Update the model
                 nlp.update(example, drop=0.5, losses=losses)
-              
+                #  dropout - make it harder to memorise data
     # the DocBin will store the example documents
     db = DocBin()
         
@@ -184,6 +184,7 @@ train_spacy(None, './train.spacy', 60)
     #     'POLICY NUMBER: COMMERCIAL GENERAL LIABILITY CG 241710 01 THIS ENDORSEMENT CHANGES THE POLICY. PLEASE READ IT CAREFULLY. CONTRACTUAL LIABILITY -RAILROADS This endorsement modifies insurance provided under the following : COMMERCIAL GENERAL LIABILITY COVERAGE PART SCHEDULE Scheduled Railroad: IAS REQUIRED BY WRITTEN CONTRACT Designated Job Site: (If no entry appears above, information required to complete this endorsement will be shown in the Declarations as applicable to this endorsement.)',
     #     {"entities": [(272, 324, "SCHEDULED_TEXT:RAILROAD"), (325, 345, "SCHEDULED_TEXT:Designated Job Site")]}
     # ),
+    
     
     
     

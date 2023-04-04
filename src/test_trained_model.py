@@ -40,14 +40,14 @@ def testModel(pdfFile):
     for text in texts:
         doc = trained_nlp(text)
         for ent in doc.ents:
-            # print(ent.text, ent.start_char, ent.end_char, ent.label_)
-            print('🔵 ent.text: ', ent.text)
-            print('🟣label: ', ent.label_)
+            print(ent.text, ent.start_char, ent.end_char, ent.label_)
         if len(doc.ents) == 0:
             print ("No entities found.")
          
             
-testModel(pdfFile)
+if __name__ == "__main__":
+    testModel(pdfFile)
+
 
 
 

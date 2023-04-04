@@ -1,29 +1,9 @@
 import re
 from PyPDF2 import PdfReader
 import spacy
-from spacy.matcher import Matcher
 from spacy.matcher import PhraseMatcher
 
 from helper_functions import normalize_text
-
-
-# def generateTrainingDataText(text, startText, endText):  
-#     ## Normalize text
-#     text = text.replace('\n', "")
-#     text = re.sub(' +', ' ', text)
-#     text = text.replace("-", "")
-#     text = text.replace("–", "")
-#     # print('text: ', text)
-
-#     startindex = text.index(startText)
-#     endindex = text.index(endText)
-#     lengthOfEndText = len(endText)
-#     endindex = endindex + lengthOfEndText
-#     res = text[startindex: endindex]
-#     # print('startindex: ', startindex)
-#     # print('endindex: ', endindex)
-#     # print('res: ', res)
-#     return text
 
 
 def generateTrainingDataText(text, startText, endText):  
@@ -48,44 +28,6 @@ def generateTrainingData():
     trainingDataText = generateTrainingDataText(text, startText, endText)
     return trainingDataText
 
-
-# def phraseMatcher(text):
-#     nlp = spacy.load("en_core_web_sm")
-#     matcher = PhraseMatcher(nlp.vocab, attr="LOWER")
-    
-#     # List of Patterns To Match For
-#     phrases = [
-#         'Name Of Additional Insured Person(s) Or Organization(s): As Required by Written Contract executed prior to any claim or “suit.”',
-#         'Name Of Additional Insured Person(s) Or Organiz ation(s) Location And Description Of Completed Oper ations As Required by Written Contract executed prior to any claim or “suit.” As Required by Written Contract executed prior to any claim or “suit.',
-#         'Name Of Additional Insured Person(s) Or Organization(s): The City of New York, including its officials and employees ; New York City Transit Authority ( "NYCT"), the Manhattan and Bronx Surface Transit Operating Authority ("MaBSTOA"), the Staten Island Rapid Transit Operating Authority ("SIRTOA"), the Metropolitan Transportation Authority ("MTA") including its subsidiaries and affiliates, MTA Capital Construction ("MTACC"), MTA Bus Company ("MTA Bus"), and the City of New York ("City" as Owner) and the representative affiliates and subsidiaries existing currently or in the future of and successors to each Indemnified Partie s listed herein.',
-#         'Name Of Additional Insured Person(s) Or Organization(s) Location(s) Of Covered Operations As required by written contract executed prior to the As required by writte n contract executed prior to date of an occurrence. the date of an occurrence.',
-#         'Name Of Additional Insured Person(s) Or Organization(s) As required by written contract executed prior to the date of an occurrence. If required by your written contract with the Additional Insured, this insurance shall be on a primary/noncontributory basis. The inclusion of one or more Additional Insured under the terms of this endorsement does not increase our limits of liability. All other terms and conditions remain unchanged.',
-#         'Name Of Additional Insured Person(s) Or Organization(s) Location And Description Of Completed Ooerations As required by written contract executed prior to the date of an occurrence. As required by written contract executed prior to the date of an occurrence.',
-#         'Name Of Additional Insured Person(s)Or Organization(s)Location And Description Of Completed Operations Any person or organization where the Named Insured has agreed in a written contract or agreement to name as an additional insured provided that the contract or agreement was executed prior to the loss or occurrence. All Locations at which the Named Insured completed operations.',
-#         'Name Of Additional Insured Person(s)Or Organization(s)Location(s) Of Covered OperationsAny person or organization where the Named Insured has agreed in a written contract or agreement to name as an additional insured provided that the contract or agreement was executed prior to the loss or occurrence. All Locations at which the Named Insured is performing ongoing operations.',    
-#     ]
-    
-#     # Create Doc Objects For The Phrases
-#     # Only run nlp.make_doc to speed things up
-#     # patterns = [nlp(phrase) for phrase in phrases ]
-#     patterns = [nlp.make_doc(phrase) for phrase in phrases]
-#     matcher.add("AdditionalInsuredsPattern", patterns)
-
-#     doc = nlp(text)
-
-#     matches = matcher(doc)
-    
-#     for match_id, start, end in matches:
-#         string_id = nlp.vocab.strings[match_id]  
-#         span = doc[start:end]    
-#         spanText = span.text
-#         # print('spanText: ', spanText)
-#         start_index = text.find(spanText)
-#         end_index = start_index + len(spanText)
-#         # print('res: ', text[start_index:end_index])
-#         return res
-            
-            
 
 def phraseMatcher(text):
     nlp = spacy.load("en_core_web_sm")
@@ -112,6 +54,8 @@ def phraseMatcher(text):
         'name of additional insured person(s) or organization(s) location and description of completed ooerations as required by written contract executed prior to the date of an occurrence. as required by written contract executed prior to the date of an occurrence.',
         'name of additional insured person(s)or organization(s)location and description of completed operations any person or organization where the named insured has agreed in a written contract or agreement to name as an additional insured provided that the contract or agreement was executed prior to the loss or occurrence. all locations at which the named insured completed operations.',
         'name of additional insured person(s)or organization(s)location(s) of covered operationsany person or organization where the named insured has agreed in a written contract or agreement to name as an additional insured provided that the contract or agreement was executed prior to the loss or occurrence. all locations at which the named insured is performing ongoing operations.',    
+        'name of additional insured person(s) or organization(s): the city of new york c/o nycdot office of permit management 55 water street new york, ny 10041 the city of new york, including its officials and employees',
+        'name of additional insured person(s) or organization(s): location and description of completed operations any person or organization for whom you are performing operations during the policy period when you and such person or organization have agreed in writing in a contract or agreement that such person or organization be added as an additional insured on your policy. 520 e 137th street, bronx, ny 10457',
     ]
     
     # Create Doc Objects For The Phrases
@@ -139,8 +83,6 @@ def phraseMatcher(text):
     return training_data
 
 
-
-
 def generateTrainingDataSetFromPDF(pdfFile):  
     reader = PdfReader(pdfFile)
     number_of_pages = len(reader.pages)
@@ -160,34 +102,97 @@ def generateTrainingDataSetFromPDF(pdfFile):
             
     return training_data_set
 
-def generateTestingDataTextFromPDF(pdfFile):  
+
+def generateTextsDataSetFromPDF(pdfFile):  
     reader = PdfReader(pdfFile)
     number_of_pages = len(reader.pages)
     texts = []
     for i in range(number_of_pages):
-        if (i == 12):
+        if (i == 14):
             page = reader.pages[i]
             text = page.extract_text()    
             text = normalize_text(text)
-            # print('🟣 text: ', text)
             if text:
                 texts.append(text)    
     return texts
 
 
-# def generateTestingDataTextFromPDF(pdfFile):  
-#     reader = PdfReader(pdfFile)
-#     number_of_pages = len(reader.pages)
-#     texts = []
-#     for i in range(number_of_pages):
-#         if (i in [4, 5, 6]):
-#             page = reader.pages[i]
-#             text = page.extract_text()    
-#             text = normalize_text(text)
-#             if text:
-#                 texts.append(text)    
-#     return texts
+def generateTestingDataTextFromPDF(pdfFile):  
+    texts = generateTextsDataSetFromPDF (pdfFile) 
+    return texts
 
+
+def phraseMatcherInSentences(text):
+    nlp = spacy.load("en_core_web_sm")
+    phrase_matcher = PhraseMatcher(nlp.vocab, attr="LOWER")
+    
+    # List of Patterns To Match For
+    phrases = [
+        'name of additional insured person(s) or organization(s)', 
+        'name of additional insured person(s) or orga nization(s)', 
+        'location(s) of covered operations',
+        'agreed in writing in a contract or agreement',
+        'an additional insured on your policy',
+        'the city of new york',
+        'scheduled basis only',
+        'any person or organization for whom you are performing operations during the policy period',
+        'as required by written contract executed prior to the date of an occurrence',
+        'any person or organization where the named insured has agreed',
+        'all locations at which the named insured'
+    ]
+    
+    patterns = [nlp(text) for text in phrases]
+    phrase_matcher.add('AdditionlInsuredsScheduledText', None, *patterns)
+    
+    training_data = None
+    
+    scheduledTextsList = []
+    scheduledText = ''
+    
+    doc = nlp(text)
+    
+    for sent in doc.sents:
+        for match_id, start, end in phrase_matcher(nlp(sent.text)):
+            if nlp.vocab.strings[match_id] in ["AdditionlInsuredsScheduledText"]:
+                scheduledTextsList.append(sent.text)
+    if (len(scheduledTextsList) > 0):
+        entities = []
+        scheduledTextsList = list(set(scheduledTextsList))
+        for scheduledText in scheduledTextsList:
+            start_index = text.find(scheduledText)
+            end_index = start_index + len(scheduledText)
+            entity = (start_index, end_index, "SCHEDULED_TEXT:ADDITIONAL_INSURED")
+            entities.append(entity)
+            
+        training_data = (
+            text,
+            {"entities": entities}
+        )
+    
+    return training_data
+
+
+def sentenceExtraction():
+    pdfFile = "src/samples/Additional-Insureds-Training.pdf"
+
+    reader = PdfReader(pdfFile)
+    number_of_pages = len(reader.pages)
+                
+    texts = []
+    training_data_set = []
+
+    for i in range(number_of_pages):
+        if (i == 1):
+            page = reader.pages[i]
+            text = page.extract_text()    
+            text = normalize_text(text)
+
+            texts.append(text)
+            training_data = phraseMatcherInSentences(text)
+            if training_data:
+                training_data_set.append(training_data)
+            
+    return training_data_set
 
 
 pdfFile = "src/samples/Additional_Insureds_Training_Two.pdf"
